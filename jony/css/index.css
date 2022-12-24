@@ -1,6 +1,6 @@
-body {
+body{
     background-image: url(../img/bcg.png);
-    ;
+    
 }
 
 
@@ -9,7 +9,7 @@ body {
     margin-top: 20px;
     width: 100%;
     display: flex;
-    /* background-color: aqua; */
+
 
 }
 
@@ -126,6 +126,7 @@ body {
     width: 100%;
     height: 600px;
     margin-top: 27px;
+    padding: 0px;
 }
 
 
@@ -178,7 +179,7 @@ body {
 .lorem1 {
     width: 50%;
     height: 400px;
-margin-top: -25px;
+    margin-top: -25px;
 }
 
 .bar {
@@ -186,18 +187,21 @@ margin-top: -25px;
     height: 6px;
     border: solid 1px #DB9A64;
     border-radius: 15px;
+    float: left;
+
 }
 
-.bar1 {
-    background-color: #DB9A64;
-    height: 7px;
-    width: 300px;
-    border-radius: 15px;
+.barr1 {
+    height: 5px;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #FFFFFF;
+    border-radius: 0% 20% 20% 0%;
 }
 
 .progres span {
     margin-left: 0px;
-
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #fff;
     font-weight: 400;
@@ -208,7 +212,9 @@ margin-top: -25px;
     background-color: #DB9A64;
     height: 5px;
     width: 300px;
-    border-radius: 15px;
+    border-radius: 20% 0% 0% 20%;
+    float: left;
+
 }
 
 
@@ -231,19 +237,20 @@ margin-top: -25px;
     font-weight: 400;
 } */
 .space {
-    width: 260px;
+    width: 285px;
     height: 20px;
 }
 
 .space1 {
-    width: 310px;
+    width: 330px;
     height: 20px;
 }
 
-.space2{
-    width: 210px;
+.space2 {
+    width: 245px;
     height: 20px;
 }
+
 .btn3 {
     height: 50px;
     width: 200px;
@@ -256,8 +263,109 @@ margin-top: -25px;
     align-items: center;
     font-family: "Roboto", sans-serif;
 }
+
 .btn3:hover {
     background-color: #DB9A64;
     color: aliceblue;
     transition: 0.5s;
+}
+
+.Services h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 0px;
+}
+.Services{
+ background-color:    #3B2930;
+
+}
+
+.card {
+    width: 350px;
+    border: 1px solid #6B4B40;
+    padding: 45px 30px;
+    margin-bottom: 30px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    display: flex;
+
+}
+
+
+.card1 h2 {
+    color: #DB9A64;
+    margin-top: 22px;
+    margin-bottom: 11px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.card1 p {
+    font-size: 16px;
+    color: #C9C9C9;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.mrleft{
+margin-left: 50px;
+
+}
+.mrleft1{
+    margin-left: 175px;
+    
+    }
+
+.mrtop{
+margin-top: 90px;
+}
+.mrbot{
+margin-bottom: 60px;
+}
+
+.Works{
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 0px;
+display: flex;
+margin-top: 50px;
+background-color: #311E25;
+}
+.colum1{
+
+    display: inline-block;
+
+
+
+
+}
+
+
+.Works span{
+color: #fff;
+font-size: 20px;
+font-weight: 400;
+display: block;
+margin-bottom: 7px;}
+.Works h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: #DB9A64;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.mrleft2{
+margin-left: 59px;
+
+
 }
