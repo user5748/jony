@@ -1,11 +1,13 @@
 .hi {
     background-image: url(../img/bcg.png);
     background-size: cover;
+    width: 100%;
 }
 
-.hp{
+.hp {
     background-color: #311E25;
-position: fixed;
+  
+    z-index: 99;
 }
 
 .head1 {
@@ -31,16 +33,16 @@ position: fixed;
 
 body {
     margin: 0;
-  }
-  
-  .header-holder {
+}
+
+.header-holder {
     width: 50%;
     background-color: #16181C;
     z-index: 4;
     overflow: hidden;
-  }
-  
-  header {
+}
+
+header {
     position: relative;
     top: 0;
     left: 0;
@@ -52,9 +54,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .header .logo {
+}
+
+.header .logo {
     width: 114px;
     height: 25px;
     display: block;
@@ -62,25 +64,27 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     order: 1;
-  }
-  .device-menu{
-display: none;
-  }
+}
 
-.device-menu__inner{
-display: none;
+.device-menu {
+    display: none;
+}
+
+.device-menu__inner {
+    display: none;
 
 
 }
-  .search-mobile {
+
+.search-mobile {
     /*     display: none; */
     position: absolute;
     top: -5px;
     right: 50px;
     z-index: 6;
-  } 
-  
-  .search-mobile a {
+}
+
+.search-mobile a {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
@@ -91,10 +95,10 @@ display: none;
     width: 100px;
     height: 60px;
     position: relative;
-  }
-  
-  
-  .search-mobile a .icon_search {
+}
+
+
+.search-mobile a .icon_search {
     background: url("https://yalantis.com/assets/icon-search-eb2d80fde29a4eb86770580f52872b64097df105b39901d39abcea6dbc372969.svg") no-repeat 0 0;
     width: 25px;
     height: 25px;
@@ -104,37 +108,36 @@ display: none;
     transition: -webkit-transform .4s ease;
     transition: transform .4s ease;
     transition: transform .4s ease, -webkit-transform .4s ease;
-  }
-  
-  
-  
-  .header-nav {
+}
+
+
+
+.header-nav {
     order: 2;
-  }
-  
-  .header-nav {
-    display: none; 
-  }
-  
-  .header-nav.active {
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-nav.active {
     display: block;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.97);
+    background-color: rgba(0, 0, 0, 0.97);
     z-index: 10;
     opacity: 1;
     -webkit-transition: opacity 0.6s linear;
     transition: opacity 0.6s linear;
     width: 95%;
     left: 2.5%;
-    height:78%
-    
-  }
-  
-  .header-nav.active .header-nav__inner {
+    height: 78%
+}
+
+.header-nav.active .header-nav__inner {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -148,32 +151,35 @@ display: none;
     height: 100%;
     overflow: auto;
     background: white;
-  }
-  
-  nav.active ul {
+}
+
+nav.active ul {
     width: 100%;
     padding: 0;
     overflow: hidden;
     display: block;
-    margin-left:10px;
-  }
-  .header-nav__inner {
-    width:100%}
-  nav.active ul li {
+    margin-left: 10px;
+}
+
+.header-nav__inner {
+    width: 100%
+}
+
+nav.active ul li {
     padding: 10px 0;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     padding: 0px 0 0 0;
     display: flex;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     padding: 0 0 0 13px;
     list-style: none;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     display: inline-block;
     font-family: "BrandonText", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -184,18 +190,18 @@ display: none;
     letter-spacing: 0.9px;
     position: relative;
     text-decoration: none;
-    list-style-type:none ;
+    list-style-type: none;
     transition: color .5s ease-in-out;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     color: orange;
     transition: color .3s ease-in-out;
-    list-style-type:none ;
+    list-style-type: none;
     text-decoration: none;
-  }
-  
-  .device-menu {
+}
+
+.device-menu {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -205,10 +211,10 @@ display: none;
     width: 45px;
     height: 40px;
     display: block;
-  }
-  
-  
-  .device-menu .device-menu__inner {
+}
+
+
+.device-menu .device-menu__inner {
     width: 24px;
     height: 18px;
     position: absolute;
@@ -216,9 +222,9 @@ display: none;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
-  
-  .device-menu span {
+}
+
+.device-menu span {
     position: absolute;
     width: 100%;
     height: 3px;
@@ -228,50 +234,50 @@ display: none;
     left: 0;
     /*     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); */
-  }
-  
-  .device-menu span:nth-child(1) {
+}
+
+.device-menu span:nth-child(1) {
     top: 0;
     -webkit-transition: rotate, 0.3s;
     transition: rotate, 0.3s;
-  }
-  
-  .device-menu span:nth-child(2) {
+}
+
+.device-menu span:nth-child(2) {
     top: 50%;
     /*     -webkit-transform: translate(0, -50%); */
     /*     transform: translate(0, -50%); */
-  }
-  
-  /* .device-menu.open span:nth-child(2) {
+}
+
+/* .device-menu.open span:nth-child(2) {
   opacity: 0;
   } */
-  
-  .device-menu span:nth-child(3) {
+
+.device-menu span:nth-child(3) {
     top: 100%;
     -webkit-transition: rotate, 0.3s;
     transition: rotate, 0.3s;
-  }
-  
-  .device-menu.open span:nth-child(1) {
+}
+
+.device-menu.open span:nth-child(1) {
     top: 10px;
     right: 0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-  
-  .device-menu.open span:nth-child(2) {
+}
+
+.device-menu.open span:nth-child(2) {
     opacity: 0;
-  }
-  
-  .device-menu.open span:nth-child(3) {
+}
+
+.device-menu.open span:nth-child(3) {
     top: 10px;
     right: 0;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-  }
-  
-  /* @media only screen and (max-width: 1024px) { */
-  /*   @media only screen and (max-width: 2000px) {
+}
+
+/* @media only screen and (max-width: 1024px) { */
+/*   @media only screen and (max-width: 2000px) {
   .head {
   display: none; 
   }
@@ -329,6 +335,7 @@ display: none;
     color: aliceblue;
     transition: 0.5s;
 }
+
 .btn5:hover {
     background-color: #DB9A64;
     color: aliceblue;
@@ -402,7 +409,7 @@ display: none;
 }
 
 .creativ {
-    width: 70%;
+    width: 100%;
 
     margin-top: 80px;
 
@@ -416,7 +423,7 @@ display: none;
 .creativ2 {
     width: 100%;
     margin-top: 50px;
-    height: 400px;
+    height: 800px;
     float: left;
     display: flex;
 
@@ -545,10 +552,10 @@ display: none;
 
 .Services {
     background-color: #3B2930;
-    height: 700px;
+   
 }
 
-.card {
+.cardss {
     width: 350px;
     border: 1px solid #6B4B40;
     padding: 45px 30px;
@@ -735,11 +742,13 @@ display: none;
     color: #DB9A64;
     margin-top: 110px;
     display: flex;
-  
+
 }
-.adil h1{
+
+.adil h1 {
     margin-right: 400px;
 }
+
 .kal {
 
     line-height: 19px;
@@ -764,8 +773,8 @@ display: none;
 
 .lets {
     width: 65%;
-    height: 250px;
-margin-top: 150px;
+  
+    margin-top: 150px;
 
 
 }
@@ -778,68 +787,174 @@ margin-top: 150px;
 }
 
 
-.lets a{
+.lets a {
     color: #DB9A64;
 }
 
 
-.lets p{
-font-size: 16px;
+.lets p {
+    font-size: 16px;
     line-height: 28px;
-    color: #fff;}
+    color: #fff;
+}
 
 
-    .btn5 {
-        height: 80px;
-        width: 300px;
-        background-color: transparent;
-        border: 1px solid #DB9A64;
-        color: #DB9A64;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-       margin-right: 30px;
-           border: 1px solid #7A5444;
+.btn5 {
+    height: 80px;
+    width: 300px;
+    background-color: transparent;
+    border: 1px solid #DB9A64;
+    color: #DB9A64;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    margin-right: 30px;
+    border: 1px solid #7A5444;
     padding: 25px 30px;
     cursor: pointer;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s
+}
+
+.space232 {
+    justify-content: space-between;
+
+}
+
+.buttons p {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.buttons {
+    height: 150px;
+
+
+}
+.bars1212{
+width: 50%;
+float: left;
+}
+.height5px{
+    height: 5px ; 
+}
+
+@media only screen and (max-width: 600px) {
+    .device-menu__inner {
+        display: block;
     }
-.space232{
-justify-content: space-between;
 
-}
-.buttons p{
- color: #fff;
-text-align: center;
-font-size: 25px;
-margin-top: 10px;
-}
-
-.buttons{
-height: 150px;
-display: ;
-
-}
-    @media only screen and (max-width: 600px) {
-.device-menu__inner {display: block;}
-.navbar{display: none;}
-
-
+    .navbar {
+        display: none;
     }
+.btn1{
+    display: none;
+}
+.jony img{
+    width: 300px;
+}
+.creativ2 p {
+    font-size: 9px;
+    line-height: 28px;
+    color: #C9C9C9;
+    margin: 20px 0;
+    float: left;
+}
+.bars span {
+    font-size: 17px;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+.creativ {
+    width: 100%;
+    margin-top: 0px;
+}
+.lorem1 {
+    width: 1000px;
+    height: 400px;
+    margin-top: -25px;
+}
+.creativ2 {
+    display: flex;
+
+}
+.text {
+    float: left;
+    margin-top: 0px;
+}
+.btn3 {
+    height: 66px;
+    width: 83%;
+    background-color: transparent;
+    border: 1px solid #DB9A64;
+    color: #DB9A64;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    margin-left: 37px;
+   
+}
+.bars1212 {
+    display: none;
+}
+.card1 {
+    display: grid;
+}
+.mrleft {
+    margin-left: 0px;
+}
+
+.mrleft2 {
+    margin-left: 0px;
+}
+.colums {
+    display: grid;
+    padding: 0px;
+}
+.width365{
+width: 365px;
+
+
+}
+.buttons {
+    height: 400px;
+    margin-top: 43px;
+    margin-left: 28px;
+}
+.adil {
+    color: #DB9A64;
+    margin-top: 0px;
+    display
+}
+.lets {
+   
+    margin-top: 30px;
+}
+.buttons {
+    height: 400px;
+    margin-top: 43px;
+    margin-left: 28px;
+    display: grid;
+}
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {}
