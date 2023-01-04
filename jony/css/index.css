@@ -6,7 +6,7 @@
 
 .hp {
     background-color: #311E25;
-  
+
     z-index: 99;
 }
 
@@ -327,7 +327,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    margin-left: 280px;
+    margin-left: 50px;
 }
 
 .btn1:hover {
@@ -423,7 +423,6 @@ nav ul li a:hover {
 .creativ2 {
     width: 100%;
     margin-top: 50px;
-    height: 800px;
     float: left;
     display: flex;
 
@@ -552,7 +551,7 @@ nav ul li a:hover {
 
 .Services {
     background-color: #3B2930;
-   
+
 }
 
 .cardss {
@@ -678,7 +677,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-top: 80px;
     margin-bottom: 90px;
 }
@@ -773,7 +772,7 @@ nav ul li a:hover {
 
 .lets {
     width: 65%;
-  
+
     margin-top: 150px;
 
 
@@ -837,12 +836,14 @@ nav ul li a:hover {
 
 
 }
-.bars1212{
-width: 50%;
-float: left;
+
+.bars1212 {
+    width: 50%;
+    float: left;
 }
-.height5px{
-    height: 5px ; 
+
+.height5px {
+    height: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -853,98 +854,120 @@ float: left;
     .navbar {
         display: none;
     }
-.btn1{
-    display: none;
-}
-.jony img{
-    width: 300px;
-}
-.creativ2 p {
-    font-size: 9px;
-    line-height: 28px;
-    color: #C9C9C9;
-    margin: 20px 0;
-    float: left;
-}
-.bars span {
-    font-size: 17px;
-    color: #fff;
-    line-height: 30px;
-    margin-bottom: 60px;
-}
-.creativ {
-    width: 100%;
-    margin-top: 0px;
-}
-.lorem1 {
-    width: 1000px;
-    height: 400px;
-    margin-top: -25px;
-}
-.creativ2 {
-    display: flex;
 
-}
-.text {
-    float: left;
-    margin-top: 0px;
-}
-.btn3 {
-    height: 66px;
-    width: 83%;
-    background-color: transparent;
-    border: 1px solid #DB9A64;
-    color: #DB9A64;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    margin-left: 37px;
-   
-}
-.bars1212 {
-    display: none;
-}
-.card1 {
-    display: grid;
-}
-.mrleft {
-    margin-left: 0px;
-}
+    .btn1 {
+        display: none;
+    }
 
-.mrleft2 {
-    margin-left: 0px;
-}
-.colums {
-    display: grid;
-    padding: 0px;
-}
-.width365{
-width: 365px;
+    .jony img {
+        width: 300px;
+    }
+
+    .creativ2 p {
+        font-size: 9px;
+        line-height: 28px;
+        color: #C9C9C9;
+        margin: 20px 0;
+        float: left;
+    }
+
+    .bars span {
+        font-size: 17px;
+        color: #fff;
+        line-height: 30px;
+        margin-bottom: 60px;
+    }
+
+    .creativ {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .lorem1 {
+        width: 100%;
+        height: 400px;
+        margin-top: -25px;
+    }
+
+    .creativ2 {
+        display: grid;
+
+    }
+
+    .text {
+        float: left;
+        margin-top: 0px;
+    }
+
+    .btn3 {
+        height: 66px;
+        width: 83%;
+        background-color: transparent;
+        border: 1px solid #DB9A64;
+        color: #DB9A64;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        margin-left: 0px;
+
+    }
+
+    .bars1212 {
+        /* display: none; */
+    }
+
+    .card1 {
+        display: grid;
+    }
+
+    .mrleft {
+        margin-left: 0px;
+    }
+
+    .mrleft2 {
+        margin-left: 0px;
+    }
+
+    .colums {
+        display: grid;
+        padding: 0px;
+    }
+
+    .width365 {
+        width: 365px;
 
 
-}
-.buttons {
-    height: 400px;
-    margin-top: 43px;
-    margin-left: 28px;
-}
-.adil {
-    color: #DB9A64;
-    margin-top: 0px;
-    display
-}
-.lets {
-   
-    margin-top: 30px;
-}
-.buttons {
-    height: 400px;
-    margin-top: 43px;
-    margin-left: 28px;
-    display: grid;
-}
+    }
+
+    .buttons {
+        height: 400px;
+        margin-top: 43px;
+        margin-left: 28px;
+    }
+
+    .adil {
+        color: #DB9A64;
+        margin-top: 0px;
+        display
+    }
+
+    .lets {
+
+        margin-top: 30px;
+    }
+
+    .buttons {
+        height: 400px;
+        margin-top: 43px;
+        margin-left: 28px;
+        display: grid;
+    }
+
+    .swiper-pagination {
+        bottom: -5px !important;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
