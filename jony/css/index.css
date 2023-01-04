@@ -184,7 +184,7 @@ nav ul li a {
     font-family: "BrandonText", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 17px;
-    color: black;
+    color: #DB9A64;
     text-transform: uppercase;
     padding: 5px 8px;
     letter-spacing: 0.9px;
@@ -311,6 +311,7 @@ nav ul li a:hover {
     margin-left: 20px;
 
 }
+
 
 .flex {
     display: flex;
