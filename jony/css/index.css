@@ -31,6 +31,21 @@
 
 }
 
+
+
+.tel1:hover img{
+    transform: scale(1.2)
+
+
+}
+
+.tel2:hover img{
+    transform: scale(1.2)
+
+
+}
+
+
 body {
     margin: 0;
 }
@@ -347,7 +362,8 @@ nav ul li a:hover {
 
 
 .hi h1 {
-
+    display: flex; 
+width: 15.5ch;
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 70px;
@@ -355,8 +371,31 @@ nav ul li a:hover {
     font-weight: 300 !important;
     line-height: 75px;
     padding: 0px;
+    border-right: 4px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+animation: flashing-border 0.75s ease infinite,
+printed-text 1s steps(15) ;
+margin: 0px;
+
+}
+@keyframes flashing-border{
+0%{
+    border-color: white;
+}
+50%{
+    border-color: transparent;
+}
+100%{
+    border-color: white;
+}
+}
 
 
+@keyframes printed-text{
+from{
+    width: 0;
+}
 
 }
 
@@ -389,7 +428,7 @@ nav ul li a:hover {
 
 .text span {
     color: #DB9A64;
-
+font-size: 50px;
 
 }
 
@@ -678,7 +717,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    margin-left: 0px;
+    margin-left: 92px;
     margin-top: 80px;
     margin-bottom: 90px;
 }
@@ -915,10 +954,7 @@ nav ul li a:hover {
 
     }
 
-    .bars1212 {
-        /* display: none; */
-    }
-
+   
     .card1 {
         display: grid;
     }
@@ -951,7 +987,6 @@ nav ul li a:hover {
     .adil {
         color: #DB9A64;
         margin-top: 0px;
-        display
     }
 
     .lets {
@@ -969,7 +1004,16 @@ nav ul li a:hover {
     .swiper-pagination {
         bottom: -5px !important;
     }
-}
+    .hi h1 {
+       
+        font-size: 45px;
+
+    }
+    .text span {
+        color: #DB9A64;
+        font-size: 30px;
+    }
+        
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
@@ -979,6 +1023,5 @@ nav ul li a:hover {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
+ 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
