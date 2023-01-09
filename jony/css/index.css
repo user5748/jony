@@ -14,7 +14,7 @@
     margin-top: 20px;
     width: 100%;
     display: flex;
-
+    justify-content: center;
 
 }
 
@@ -33,16 +33,12 @@
 
 
 
-.tel1:hover img{
+.tel1:hover img {
     transform: scale(1.2)
-
-
 }
 
-.tel2:hover img{
+.tel2:hover img {
     transform: scale(1.2)
-
-
 }
 
 
@@ -187,6 +183,7 @@ nav.active ul li {
 nav ul {
     padding: 0px 0 0 0;
     display: flex;
+    MARGIN-LEFT: -150PX;
 }
 
 nav ul li {
@@ -307,7 +304,7 @@ nav ul li a:hover {
   } */
 
 .navbar {
-    width: 740px;
+
     margin-top: 20px;
     margin-left: 180px;
 
@@ -362,8 +359,8 @@ nav ul li a:hover {
 
 
 .hi h1 {
-    display: flex; 
-width: 15.5ch;
+    display: flex;
+    width: 15.5ch;
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 70px;
@@ -374,28 +371,31 @@ width: 15.5ch;
     border-right: 4px solid white;
     white-space: nowrap;
     overflow: hidden;
-animation: flashing-border 0.75s ease infinite,
-printed-text 1s steps(15) ;
-margin: 0px;
+    animation: flashing-border 0.75s ease infinite,
+        printed-text 1s steps(15);
+    margin: 0px;
 
 }
-@keyframes flashing-border{
-0%{
-    border-color: white;
-}
-50%{
-    border-color: transparent;
-}
-100%{
-    border-color: white;
-}
+
+@keyframes flashing-border {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: white;
+    }
 }
 
 
-@keyframes printed-text{
-from{
-    width: 0;
-}
+@keyframes printed-text {
+    from {
+        width: 0;
+    }
 
 }
 
@@ -428,7 +428,7 @@ from{
 
 .text span {
     color: #DB9A64;
-font-size: 50px;
+    font-size: 50px;
 
 }
 
@@ -954,7 +954,7 @@ font-size: 50px;
 
     }
 
-   
+
     .card1 {
         display: grid;
     }
@@ -1004,24 +1004,32 @@ font-size: 50px;
     .swiper-pagination {
         bottom: -5px !important;
     }
+
     .hi h1 {
-       
+
         font-size: 45px;
 
     }
+
     .text span {
         color: #DB9A64;
         font-size: 30px;
     }
-        
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+    /* Small devices (portrait tablets and large phones, 600px and up) */
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
- 
 
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .nav ul {
+       
+            margin-left: -130px;
+        }
+
+
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}    
